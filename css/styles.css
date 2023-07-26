@@ -1,10 +1,11 @@
 :root {
-  
+
     --text: #fafafa;
-    --background: #050505;
-    --primary: #77d3d3;
-    --secondary: #0f0b28;
-    --accent: #d78e8e;
+--background: #050505;
+--primary: #90bba3;
+--secondary: #141f19;
+--accent: #6df0a5;
+    
 
     --gradient-primary-to-accent: linear-gradient(to right, var(--primary), var(--accent));
     --gradient-primary-to-secondary: linear-gradient(to right, var(--primary), var(--secondary));
@@ -16,10 +17,13 @@
 
 body{
     font-family:'Lato', sans-serif;
-    font-size:16px
+    font-size:16px;
+    overflow-x: hidden;
+    
 }
 body.active{
     overflow:hidden;
+    
     z-index:-1
 }
 .no-js #experience-timeline>div{
@@ -167,7 +171,10 @@ footer{
     color:#74808a
 }
 .social{
-    text-align:right
+    text-align:center;
+}
+.footer-social{
+    text-align: right;
 }
 .social ul{
     margin:5px 0 0 0;
@@ -180,11 +187,12 @@ footer{
 }
 .social a{
     display:block;
-    color:#74808a;
+    
+    color:var(--primary);
     padding:10px
 }
 .social a:hover{
-    color:#3498db
+    color:var(--accent);
 }
 .btn-rounded-white{
     display:inline-block;
@@ -430,13 +438,13 @@ footer{
     color:var(--primary);
     margin-bottom:50px
 }
-.education-block{
-    max-width:700px;
-    margin:0 auto 30px auto;
-    padding:15px;
-    border:1px solid var(--accent);
+.education-block {
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    padding: 15px 15px 0 15px; /* Reduced padding on the bottom to 10px */
+    border: 1px solid var(--accent);
     background: var(--secondary);
-    text-align:left
+    text-align: left;
 }
 .education-block h3{
     font-weight:500;
@@ -564,6 +572,10 @@ footer{
     color:#fff;
     transition:.5s ease all
 }
+#contact-form p{
+    color:var(--text);
+    font-size: 14px;
+}
 #contact-form input::-webkit-input-placeholder,#contact-form textarea::-webkit-input-placeholder{
     color:#fff
 }
@@ -588,19 +600,22 @@ footer{
 }
 #contact-form button{
     display:block;
-    width:100%;
-    background:var(--accent);
+    margin: 0 auto;
+    width:auto;
+    
     border-radius:4px;
     padding:5px 10px;
     border:none;
-    color:var(--text);
+    color: var(--background);
+    background: var(--primary);
+    
     font-weight:700;
     box-shadow:0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24);
     transition:.5s ease all
 }
 #contact-form button:hover{
-    color: var(--background);
-    background: var(--primary);
+    background:var(--accent);
+    color:var(--text);
 }
 .optional-section{
     padding:50px 15px;
