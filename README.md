@@ -2,7 +2,7 @@
 
 This repository contains the source code for my personal portfolio website. The website showcases my projects, skills, education, and contact information. It serves as a digital resume and a platform to share my work with others.
 
-Visit my Portfolio: [DanielBasarab.com](http://danielbasarab.com/)
+Visit my Portfolio: [DanielBasarab.com](https://danielbasarab.com/)
 
 ## Table of Contents
 
