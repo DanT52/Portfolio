@@ -1,3 +1,19 @@
+:root {
+  
+    --text: #fafafa;
+    --background: #050505;
+    --primary: #77d3d3;
+    --secondary: #0f0b28;
+    --accent: #d78e8e;
+
+    --gradient-primary-to-accent: linear-gradient(to right, var(--primary), var(--accent));
+    --gradient-primary-to-secondary: linear-gradient(to right, var(--primary), var(--secondary));
+    --gradient-background-to-secondary: linear-gradient(to right, var(--background), var(--secondary));
+
+    --gradient-hero: linear-gradient(to right, #123d379a, #0d18369f);
+ 
+  }
+
 body{
     font-family:'Lato', sans-serif;
     font-size:16px
@@ -122,14 +138,17 @@ header.sticky{
     vertical-align:middle
 }
 footer{
-    padding:50px 0
+    padding:50px 0;
+    background: var(--background);
+    
 }
 .copyright{
     padding-top:20px
 }
 .copyright p{
     margin:0;
-    color:#74808a
+    
+    color: var(--text);
 }
 .top{
     text-align:center
@@ -169,16 +188,24 @@ footer{
 }
 .btn-rounded-white{
     display:inline-block;
-    color:#fff;
-    padding:15px 25px;
-    border:3px solid #fff;
+    color: var(--text);
+    padding:5px 25px;
+    border:2px solid var(--text);
     border-radius:30px;
-    transition:.5s ease all
+    
+    margin-right: 20px;
+    
+    margin-left: 20px;
+    
+
+    
+    
+    
 }
 .btn-rounded-white:hover{
-    color:#3498db;
-    background:#fff;
-    text-decoration:none
+    color:var(--primary);
+    background:var(--text);
+    text-decoration:none;
 }
 .shadow{
     box-shadow:0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24)
@@ -205,7 +232,7 @@ footer{
     background:#3498db
 }
 .background-alt{
-    background:#f2f2f5
+    background:var(--background)
 }
 #lead{
     position:relative;
@@ -229,7 +256,7 @@ footer{
     margin:0
 }
 #lead-content h1{
-    color:#fff;
+    color:var(--text);
     font-weight:900;
     font-size:5em;
     text-transform:uppercase;
@@ -237,7 +264,7 @@ footer{
     line-height:0.9em
 }
 #lead-content h2{
-    color:#a0cfee;
+    color:var(--primary);
     font-weight:500;
     font-size:2.25em;
     margin-bottom:15px
@@ -250,7 +277,7 @@ footer{
     right:0;
     bottom:0;
     left:0;
-    background:rgba(33,125,187,0.8);
+    background: var(--gradient-hero);
     z-index:1
 }
 #lead-down{
@@ -291,13 +318,14 @@ footer{
 }
 #about{
     padding:75px 15px;
-    border-bottom:1px solid #dcd9d9
+    border-bottom:2px solid var(--secondary);
+    background-color: var(--background);
 }
 #about h2{
-    color:#374054
+    color:var(--primary);
 }
 #about p{
-    color:#74808a;
+    color:var(--text);
     margin:0
 }
 #experience{
@@ -394,39 +422,41 @@ footer{
 }
 #education{
     padding:50px 15px 20px 15px;
-    border-bottom:1px solid #dcd9d9;
+    border-bottom:1px solid var(--secondary);
+    background: var(--background);
     text-align:center
 }
 #education h2{
-    color:#374054;
+    color:var(--primary);
     margin-bottom:50px
 }
 .education-block{
     max-width:700px;
     margin:0 auto 30px auto;
     padding:15px;
-    border:1px solid #dcd9d9;
+    border:1px solid var(--accent);
+    background: var(--secondary);
     text-align:left
 }
 .education-block h3{
     font-weight:500;
     float:left;
     margin:0;
-    color:#374054
+    color:var(--accent)
 }
 .education-block span{
     color:#74808a;
     float:right
 }
 .education-block h4{
-    color:#74808a;
+    color:var(--primary);
     clear:both;
     font-weight:500;
     margin:0 0 15px 0
 }
 .education-block p,.education-block ul{
     margin:0;
-    color:#74808a;
+    color:var(--text);
     font-size:0.9em
 }
 .education-block ul{
@@ -434,11 +464,11 @@ footer{
 }
 #projects{
     padding:50px 15px;
-    border-bottom:1px solid #dcd9d9;
+    border-bottom:2px solid var(--secondary);
     text-align:center
 }
 #projects h2{
-    color:#374054;
+    color:var(--primary);
     margin-bottom:50px
 }
 .project{
@@ -446,7 +476,7 @@ footer{
     max-width:900px;
     margin:0 auto 30px auto;
     overflow:hidden;
-    background:#fff;
+    background:var(--secondary);
     border-radius:4px
 }
 .project-image{
@@ -462,13 +492,17 @@ footer{
 .project-info h3{
     font-size:1.5em;
     font-weight:300;
-    color:#374054;
+    color:var(--accent);
     margin:0 0 15px 0
 }
 .project-info p{
-    color:#74808a;
+    color:var(--text);
     margin:0 0 15px 0;
     font-size:0.9em
+}
+.project a{
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .no-image .project-info{
     position:relative;
@@ -481,10 +515,12 @@ footer{
 }
 #skills{
     padding:50px 15px;
-    text-align:center
+    text-align:center;
+    border-bottom:2px solid var(--secondary);
+    background: var(--background);
 }
 #skills h2{
-    color:#374054;
+    color:var(--primary);
     margin-bottom:50px
 }
 #skills ul{
@@ -497,20 +533,20 @@ footer{
     display:inline-block;
     margin:7px;
     padding:5px 10px;
-    color:#374054;
-    background:#e4e4ea;
+    color:var(--text);
+    background:var(--secondary);
     list-style:none;
     cursor:default;
     font-size:1.2em
 }
 #contact{
     padding:50px 15px;
-    background:#3498db;
+    background:var(--secondary);
     text-align:center
 }
 #contact h2{
     margin:0 0 15px 0;
-    color:#fff;
+    color:var(--primary);
     font-weight:500
 }
 #contact-form{
@@ -524,7 +560,7 @@ footer{
     border-radius:4px;
     border:none;
     margin-bottom:10px;
-    background:#1d6fa5;
+    background:var(--background);
     color:#fff;
     transition:.5s ease all
 }
@@ -553,17 +589,18 @@ footer{
 #contact-form button{
     display:block;
     width:100%;
-    background:#fff;
+    background:var(--accent);
     border-radius:4px;
     padding:5px 10px;
     border:none;
-    color:#3498db;
+    color:var(--text);
     font-weight:700;
     box-shadow:0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24);
     transition:.5s ease all
 }
 #contact-form button:hover{
-    box-shadow:0 10px 20px rgba(0,0,0,0.19),0 6px 6px rgba(0,0,0,0.23)
+    color: var(--background);
+    background: var(--primary);
 }
 .optional-section{
     padding:50px 15px;
