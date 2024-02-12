@@ -187,12 +187,15 @@ footer{
 }
 .social a{
     display:block;
-    
     color:var(--primary);
     padding:10px
 }
 .social a:hover{
     color:var(--accent);
+}
+.contact-social .fa {
+    margin : 0 14px;
+    font-size: 43px; /* Adjust this value to your preference */
 }
 .btn-rounded-white{
     display:inline-block;
